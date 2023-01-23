@@ -21,13 +21,17 @@ This android application allows a company to view and manage customer informatio
 
 ## Screenshots
 
-|Customer List|Filter|Add|Update (Long press) |Remove
-| --- | --- | --- | --- | --- |
-|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/1.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/2.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/3.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/5.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/4.jpeg"/>
+|Customer List|Add|Update (Long press) |Remove
+| --- | --- | --- | --- |
+|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/1.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/3.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/5.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/4.jpeg"/>
 
 |Opportunity List|Add|Update (Long press) |Remove
 | --- | --- | --- | --- |
 |<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/6.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/7.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/8.jpeg"/>|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/9.jpeg"/>
+
+|Filter|
+| --- |
+|<img width="200" height="360" src="https://github.com/DimalPerera/spidertracks_crm/blob/master/screens/2.jpeg"/>||
 
 
 

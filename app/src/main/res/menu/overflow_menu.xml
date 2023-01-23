@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optionAll"
+        android:title="All" />
+    <item android:id="@+id/optionActive"
+        android:title="Active" />
+    <item android:id="@+id/optionNonActive"
+        android:title="Non-Active" />
+    <item android:id="@+id/optionLead"
+        android:title="Lead" />
+</menu>

@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.spidertracks.crm'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.spidertracks.crm"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding = true
+    }
+}
+ext {
+    //View model
+    ext.lifecycle_version = "2.5.1"
+    //Retrofit
+    ext.retrofit_version = '2.7.2'
+    ext.httplogging_version = '4.6.0'
+    //Jackson
+    ext.jackson_version = '2.9.0'
+    ext.jackson_annotations_version = '2.14.1'
+    //RX
+    ext.rxandroid_version = '3.0.2'
+    ext.retrofit_rxjava_adapter_version = '2.9.0'
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "org.mockito:mockito-core:5.0.0"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+
+    implementation 'androidx.fragment:fragment-ktx:1.5.5'
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$httplogging_version"
+
+    //Jackson
+    implementation "com.squareup.retrofit2:converter-jackson:$jackson_version"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:$jackson_annotations_version"
+
+    //RX
+    implementation "io.reactivex.rxjava3:rxandroid:$rxandroid_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofit_rxjava_adapter_version"
+
+}

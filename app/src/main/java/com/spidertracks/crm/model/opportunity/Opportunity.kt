@@ -5,6 +5,11 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import kotlinx.parcelize.Parcelize
 import android.os.Parcelable
 
+/**
+ * A data class representing a Opportunity object, which include properties such as customerId, id,
+ * name, and status. It implements the Parcelable interface for efficient data transport.
+ */
+
 @Parcelize
 data class Opportunity(
     @JsonProperty("customerId")

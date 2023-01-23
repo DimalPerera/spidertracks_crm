@@ -30,6 +30,12 @@ class CustomerListAdapter() :
     override fun getItemCount(): Int = stationList.size
 
 
+    /**
+    ViewHolder class for handling UI elements and data binding for each item in the RecyclerView.
+    Takes a private val of type ListItemCustomerBinding as its constructor parameter.
+    Has a bind function that takes a Customer object as a parameter and sets click listeners for
+    the row, long click, and delete button.
+     */
     inner class ViewHolder(private val binding: ListItemCustomerBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(customer: Customer) {

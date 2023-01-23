@@ -21,7 +21,6 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
         // Create a new instance of DatePickerDialog and return it
         return DatePickerDialog(requireContext(), this, year, month, day)
 
-
     }
 
     override fun onDateSet(view: DatePicker, year: Int, month: Int, day: Int) {

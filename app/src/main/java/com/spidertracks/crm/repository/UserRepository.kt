@@ -11,6 +11,15 @@ import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 
+/**
+ * A UserRepository class that communicates with a web service through an ApiService instance,
+ * which is passed as a parameter in the constructor. It has properties such as _isLoading,
+ * pageSize, currentPage, disposable and a few functions such as getCustomersFromApi,
+ * deleteCustomers, createCustomer and updateCustomer which are used to fetch, delete, create
+ * and update customers respectively. These functions are using subscribeOn and observeOn
+ * to schedule the network requests on different threads.
+ */
+
 class UserRepository(private var apiService: ApiService) {
 
 

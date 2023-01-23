@@ -5,6 +5,11 @@ import android.util.Patterns
 
 class Validation {
 
+    /**
+     * These functions take an input value as a parameter and return a Boolean indicating whether
+     * the input is valid or not based on the validation logic inside the function.
+     */
+
     companion object {
         /*private fun checkIfEmailIsValid(email: String): String? {
 

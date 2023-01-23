@@ -118,6 +118,13 @@ class CustomerFragment : Fragment(), DatePickerFragment.DatePickerCallback {
 
 }
 
+/**
+ * A FormValidator class that contains a function 'validate' which takes a binding object of
+ * FragmentCustomerBinding as parameter. The function checks the validation of form fields
+ * such as name, join date, email and phone number, and set the error message if any of the fields
+ * are not valid. It returns true if all the fields are valid, otherwise returns false.
+ */
+
 class FormValidator {
     fun validate(binding: FragmentCustomerBinding): Boolean {
         // validate form fields and return true or false
@@ -147,6 +154,13 @@ class FormValidator {
 
 }
 
+/**
+ * A CustomerFactory class that contains a function 'create' which takes a binding object of
+ * FragmentCustomerBinding as parameter. The function uses the form fields from the binding
+ * object to create a Customer object and returns the created customer object. it also has a
+ * private helper function 'getCustomerStatus' which takes the same binding object as parameter,
+ * and returns the status of the customer by checking the id of the checked button of a toggle button.
+ */
 class CustomerFactory {
     fun create(binding: FragmentCustomerBinding): Customer {
         // create customer object using form fields

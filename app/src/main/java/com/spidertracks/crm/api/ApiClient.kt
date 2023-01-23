@@ -9,6 +9,13 @@ import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.jackson.JacksonConverterFactory
 
 class ApiClient {
+    /**
+    Companion object of the class.
+    Declares a constant BASE_URL that is used as the base url of the network requests.
+    Declares httpClient using OkHttpClient.Builder, adding an interceptor of HeaderInterceptor
+    Declares retrofit as a lazy property that creates a Retrofit object with the BASE_URL,
+    adding a JacksonConverterFactory, a RxJava3CallAdapterFactory and the httpClient
+     */
     companion object {
 
         const val BASE_URL = "https://xvy4yik9yk.us-west-2.awsapprunner.com/"
